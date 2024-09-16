@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=JSON.parse(localStorage.getItem("array"))
+        console.log(arr);
+        var div=document.createElement("div")
+    div.style.border="1px solid black"
+div.style.width="400px"
+div.style.height="400px"
+div.style.backgroundColor="pink"
+   var h1=document.createElement("img")
+   h1.src=arr[0]["img"]
+   h1.style.width="100px"
+   h1.style.height="100px"
+   var h2=document.createElement("h1")
+   h2.innerText=arr[0]["id"]
+   var h3=document.createElement("h1")
+   h3.innerText=arr[0]["category"]
+ div.append(h1,h2,h3)
+document.body.append(div)
+    </script>
+    
+
+
+    </script>
+</body>
+</html>
